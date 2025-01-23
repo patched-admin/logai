@@ -152,7 +152,7 @@ def create_file_setting_layout():
             html.Label("Log Type"),
             dcc.Dropdown(
                 id="log-type-select",
-                options=["HDFS", "BGL", "HealthApp", "Custom"],
+                options=["HDFS", "BGL", "HealthApp", "JPBFI", "Custom"],
                 value="HDFS",
             ),
             dbc.Row(dbc.Col([html.Div(id="custom-file-setting")])),

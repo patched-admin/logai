@@ -1,0 +1,14 @@
+{
+    "log_type": "log",
+    "dimensions": {
+      "timestamp": ["Date", "Time"],
+      "body": ["Content"],
+      "attributes": ["Level"],
+      "pid": ["TraceId"]
+    },
+    "infer_datetime": false,
+    "datetime_format": "%Y-%m-%d %H:%M:%S,%f",
+    "reader_args": {
+      "log_format": "\\[PIM:(<Date> <Time>) (<TraceId>)\\]\\[.*?\\] (<Level>) \\[.*?\\]\\[.*?\\] (<Content>)"
+    }
+  }
